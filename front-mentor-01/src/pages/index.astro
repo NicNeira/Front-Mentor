@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Frontend Mentor | Newsletter sign-up form with success message">
+	<main class="bg-custom-blue h-screen flex justify-center items-center">
+		<!-- Sign-up form start -->
+
+		<div class="bg-white w-auto h-[600px] rounded-3xl p-5 flex">
+			<div class="w-[500px] p-12 flex flex-col justify-center">
+				<h1 class="text-6xl font-roboto font-bold mb-7">Stay updated!</h1>
+
+				<!-- parrafo -->
+				<p class="mb-5 font-roboto font-bold">
+					Join 60,000+ product managers receiving monthly updates on:
+				</p>
+				<!-- puntos -->
+				<p class="flex mb-1 font-medium">
+					<img
+						class="w-5 mr-4"
+						src="/assets/images/icon-success.svg"
+						alt="succes icon"
+					/> Product discovery and building what matters
+				</p>
+				<p class="flex mb-1 font-medium">
+					<img
+						class="w-5 mr-4"
+						src="/assets/images/icon-success.svg"
+						alt="succes icon"
+					/>Measuring to ensure updates are a success
+				</p>
+				<p class="flex font-medium">
+					<img
+						class="w-5 mr-4"
+						src="/assets/images/icon-success.svg"
+						alt="succes icon"
+					/>And much more!
+				</p>
+
+				<div class="flex flex-col mt-5">
+					<!--input label  -->
+					<label for="email" class="text-xs font-roboto font-bold"
+						>Email address</label
+					>
+					<!--email  -->
+					<input
+						type="text"
+						class="w-full border border-gray-300 p-4 rounded-md mt-2"
+						placeholder="email@company.com"
+					/>
+					<!--button  -->
+					<button
+						class="bg-blue-950 text-white rounded-md p-4 mt-5 font-medium"
+					>
+						Subscribe to monthly newsletter</button
+					>
+
+					<!-- Success message start -->
+
+					<!-- Thanks for subscribing! A confirmation email has been sent to
+					ash@loremcompany.com. Please open it and click the button inside to
+					confirm your subscription. Dismiss message -->
+
+					<!-- Success message end -->
+				</div>
+			</div>
+			<div>
+				<img
+					src="/assets/images/illustration-sign-up-desktop.svg"
+					alt="side image"
+					class="object-fill h-full"
+				/>
+			</div>
+		</div>
+	</main>
+</Layout>
